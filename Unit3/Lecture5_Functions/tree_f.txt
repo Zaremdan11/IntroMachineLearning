@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="TRUNC_OLDCLAIM <= 530.5\nsamples = 8241\nvalue = [6046, 2195]\nclass = Good", fillcolor="#eeaf81"] ;
+1 [label="z_URBANICITY_Highly Urban/ Urban <= 0.5\nsamples = 5043\nvalue = [4145, 898]\nclass = Good", fillcolor="#eb9c64"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="z_PARENT1_Yes <= 0.5\nsamples = 1466\nvalue = [1405, 61]\nclass = Good", fillcolor="#e68642"] ;
+1 -> 2 ;
+3 [label="samples = 1269\nvalue = [1229, 40]\nclass = Good", fillcolor="#e6853f"] ;
+2 -> 3 ;
+4 [label="samples = 197\nvalue = [176, 21]\nclass = Good", fillcolor="#e89051"] ;
+2 -> 4 ;
+5 [label="y_EDU_2 <= 0.5\nsamples = 3577\nvalue = [2740, 837]\nclass = Good", fillcolor="#eda775"] ;
+1 -> 5 ;
+6 [label="samples = 1222\nvalue = [754, 468]\nclass = Good", fillcolor="#f5cfb4"] ;
+5 -> 6 ;
+7 [label="samples = 2355\nvalue = [1986, 369]\nclass = Good", fillcolor="#ea985e"] ;
+5 -> 7 ;
+8 [label="y_EDU_2 <= 0.5\nsamples = 3198\nvalue = [1901, 1297]\nclass = Good", fillcolor="#f7d7c0"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="z_URBANICITY_Highly Urban/ Urban <= 0.5\nsamples = 1446\nvalue = [732, 714]\nclass = Good", fillcolor="#fefcfa"] ;
+8 -> 9 ;
+10 [label="samples = 140\nvalue = [110, 30]\nclass = Good", fillcolor="#eca36f"] ;
+9 -> 10 ;
+11 [label="samples = 1306\nvalue = [622, 684]\nclass = Bad", fillcolor="#edf6fd"] ;
+9 -> 11 ;
+12 [label="TRUNC_KIDSDRIV <= 0.5\nsamples = 1752\nvalue = [1169, 583]\nclass = Good", fillcolor="#f2c09c"] ;
+8 -> 12 ;
+13 [label="samples = 1516\nvalue = [1063, 453]\nclass = Good", fillcolor="#f0b78d"] ;
+12 -> 13 ;
+14 [label="samples = 236\nvalue = [106, 130]\nclass = Bad", fillcolor="#daedfa"] ;
+12 -> 14 ;
+}

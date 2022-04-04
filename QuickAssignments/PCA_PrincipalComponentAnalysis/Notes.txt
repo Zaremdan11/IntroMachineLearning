@@ -1,0 +1,13 @@
+PCA 
+
+Benefit 1: It helps with dimensionality reduction, which makes things faster by reducing the size of dataset 
+to be stored and processed
+
+Benefit 2: Removes Correlated Features, PCA does this for you efficiently.  After implementing the PCA on your dataset, all the 
+Principal Components are independent of one another. There is no correlation among them.
+
+Improves Algorithm Performance
+Improves Visualization: It is very hard to visualize and understand the data in high dimensions. PCA transforms a high dimensional data 
+to low dimensional data (2 dimension) so that it can be visualized easily. 
+We can use 2D Scree Plot to see which Principal Components result in high variance and have more impact as compared to other 
+Principal Components. 
